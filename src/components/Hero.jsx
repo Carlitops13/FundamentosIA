@@ -70,20 +70,26 @@ export const Hero = () => {
                     variants={itemVariants}
                     className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-4"
                 >
-                    <motion.button
-                        className="w-full sm:w-auto bg-primary-fixed-dim text-on-primary-fixed px-4 md:px-6 py-2 md:py-3 text-sm md:text-label-caps rounded-DEFAULT font-label-caps hover:brightness-110 transition-all glow"
+                    <motion.a
+                        href="https://colab.research.google.com/drive/1P0-eztpPxu0gLaBZfiLep0HzMhq-F1_G?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full sm:w-auto bg-primary-fixed-dim text-on-primary-fixed px-4 md:px-6 py-2 md:py-3 text-sm md:text-label-caps rounded-DEFAULT font-label-caps hover:brightness-110 transition-all glow inline-block text-center"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
                         EXPLORAR DATASET
-                    </motion.button>
-                    <motion.button
-                        className="w-full sm:w-auto border border-outline text-primary-fixed-dim px-4 md:px-6 py-2 md:py-3 text-sm md:text-label-caps rounded-DEFAULT font-label-caps hover:bg-surface-variant transition-all"
+                    </motion.a>
+                    <motion.a
+                        href="https://github.com/Carlitops13/FundamentosIA.git"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full sm:w-auto border border-outline text-primary-fixed-dim px-4 md:px-6 py-2 md:py-3 text-sm md:text-label-caps rounded-DEFAULT font-label-caps hover:bg-surface-variant transition-all inline-block text-center"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
                         VER GITHUB REPO
-                    </motion.button>
+                    </motion.a>
                 </motion.div>
             </motion.div>
 
