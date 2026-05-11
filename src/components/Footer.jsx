@@ -51,23 +51,26 @@ export const Footer = () => {
                         viewport={{ once: true }}
                     >
                         {footerLinks.map((link, index) => (
-                            <motion.a
+                            <motion.div
                                 key={index}
-                                href={link.href}
-                                target={link.href.startsWith('http') ? '_blank' : '_self'}
-                                rel={link.href.startsWith('http') ? 'noopener noreferrer' : ''}
-                                className="flex items-center gap-2 text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed-dim transition-all font-body-sm text-body-sm group"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                <motion.span
-                                    className="material-symbols-outlined text-base group-hover:text-primary-fixed-dim transition-colors"
-                                    whileHover={{ rotate: 20 }}
+                                <a
+                                    href={link.href}
+                                    target={link.href.startsWith('http') ? '_blank' : '_self'}
+                                    rel={link.href.startsWith('http') ? 'noopener noreferrer' : ''}
+                                    className="flex items-center gap-2 text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed-dim transition-all font-body-sm text-body-sm group"
                                 >
-                                    {link.icon}
-                                </motion.span>
-                                <span className="hidden sm:inline">{link.label}</span>
-                            </motion.a>
+                                    <motion.span
+                                        className="material-symbols-outlined text-base group-hover:text-primary-fixed-dim transition-colors"
+                                        whileHover={{ rotate: 20 }}
+                                    >
+                                        {link.icon}
+                                    </motion.span>
+                                    <span className="hidden sm:inline">{link.label}</span>
+                                </a>
+                            </motion.div>
                         ))}
                     </motion.div>
                 </motion.div>
