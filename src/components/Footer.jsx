@@ -13,7 +13,7 @@ export const Footer = () => {
     const footerLinks = [
         { label: 'Methodology Docs', href: '#', icon: 'description' },
         { label: 'Link del Colab', href: 'https://colab.research.google.com/drive/1P0-eztpPxu0gLaBZfiLep0HzMhq-F1_G?usp=sharing', icon: 'auto_awesome' },
-        { label: 'GitHub Source', href: '#', icon: 'code' }
+        { label: 'Ver GitHub Repo', href: 'https://github.com/Carlitops13/FundamentosIA.git', icon: 'code' }
     ]
 
     return (
